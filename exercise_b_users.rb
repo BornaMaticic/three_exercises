@@ -80,3 +80,15 @@ users["Erik"][:pets].push( {
 )
 p users["Erik"][:pets]
 # 10. Add another person to the users hash
+users["Borna"] = {
+  :twitter => "bornaathome",
+  :lottery_numbers => [7, 17, 36, 39, 27, 4],
+  :home_town => "Osijek",
+  :pets => [
+    {
+      :name => "maza",
+      :species => "dog"
+    }
+  ]
+}
+p users["Borna"]
