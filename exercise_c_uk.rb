@@ -27,13 +27,15 @@ united_kingdom << {
 }
 p united_kingdom
 # 3. Use a loop to print the names of all the countries in the UK.
-def cities_uk( capital )
-  for capital in cities_uk
-    if city[:capital] == "Edinburgh"
-      return "Edinburgh"
-    end
-  end
-
-  return "Not found"
-end
+for country in united_kingdom
+  p country[:capital]
+end 
 # 4. Use a loop to find the total population of the UK.
+def body_count(array)
+current_total = 0
+  for people in array
+  current_total += people[:population]
+  end
+ return current_total.to_s()
+end
+p body_count(united_kingdom)
